@@ -1,4 +1,7 @@
+/*Nav section*/
+
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+html,
 body {
     font-family: 'Quicksand', sans-serif;
     margin: 0;
@@ -38,7 +41,7 @@ header::after {
     right: 0%;
     background: #2b3332;
     clip-path: circle(0px at top right);
-    transition: clip-path ease-in-out 700ms;
+    transition: clip-path ease-in-out 900ms;
 }
 
 .site-nav--open {
@@ -123,12 +126,36 @@ header::after {
     transform: translateY(-3px) rotate(-90deg);
 }
 
-.home-section img {
-    width: 100%;
-    height: auto;
+/*home-section*/
+
+.home-container {
+    max-width: 100%;
+    height: 450px;
+    margin-top: 0;
+    padding: 20px;
+    background-image: url('../img/wall.jpeg');
+    background-repeat: no-repeat;
+    font-size: 1.2rem;
+    text-align: center;
+    text-shadow: 3px 3px 3px rgb(206, 200, 200);
+    line-height: 10x;
+    border-bottom: 2px groove #2b3332;
+}
+
+.home-container .leading {
+    font-size: 3rem;
+    line-height: 10x;
+    margin-top: 30px;
+}
+
+.home-container .realEstate {
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 10x;
 }
 
 @media (min-width: 700px) {
+    /*nav-section*/
     .menu-toggle {
         display: none;
     }
@@ -154,8 +181,26 @@ header::after {
     .site-nav--icon {
         display: none;
     }
-    .home-section {
-        background-image: url('img/building.jpeg');
+    .home-container {
+        width: 100%;
+        height: 500px;
+        margin-top: 0;
+        font-size: 1.2rem;
+        padding: 20px;
+        text-align: center;
+        line-height: 15px;
+        background-image: url('../img/wall.jpeg');
         background-repeat: no-repeat;
+        border-bottom: 2px groove #2b3332;
+    }
+    .home-container .leading {
+        font-size: 3.5rem;
+        line-height: 15px;
+        margin-top: 170px;
+    }
+    .home-container .realEstate {
+        font-size: 3rem;
+        font-weight: bold;
+        line-height: 15px;
     }
 }
