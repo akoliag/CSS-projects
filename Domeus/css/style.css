@@ -1,7 +1,6 @@
 /*Nav section*/
 
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
-html,
 body {
     font-family: 'Quicksand', sans-serif;
     margin: 0;
@@ -139,7 +138,6 @@ header::after {
     text-align: center;
     text-shadow: 3px 3px 3px rgb(206, 200, 200);
     line-height: 10x;
-    border-bottom: 2px groove #2b3332;
 }
 
 .home-container .leading {
@@ -154,7 +152,150 @@ header::after {
     line-height: 10x;
 }
 
-@media (min-width: 700px) {
+/*offer section*/
+
+.offer-container {
+    background: #2b3332;
+    padding: 20px;
+    border-top: 2px solid rgb(230, 230, 191);
+    text-align: center;
+    color: #EBEBD3;
+    line-height: 30px;
+    height: auto;
+}
+
+.offer-container h1 {
+    margin-top: 50px;
+    font-weight: normal;
+    font-size: 1.9rem;
+    line-height: 50px;
+    padding: 20px;
+}
+
+.offer-container .card-body {
+    padding: 20px;
+}
+
+.offer-container .row .col-sm-12 {
+    border: 2px solid rgb(160, 160, 158);
+    box-shadow: 10px 10px 12.5px 0px rgb(9, 9, 9);
+    font-size: 12px;
+    border-radius: 12.5px;
+    margin-top: 25px;
+    box-sizing: border-box;
+}
+
+.offer-container p {
+    margin-bottom: 40px;
+}
+
+.offer-container .row .card-header {
+    font-size: 18px;
+    padding: 20px;
+    margin: 0 auto;
+    background: rgb(160, 160, 158);
+    color: #2b3332;
+    font-weight: bold;
+    border-top-left-radius: 12.5px;
+    border-top-right-radius: 12.5px;
+    margin-bottom: 15px;
+    box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    height: 50px;
+}
+
+.offer-container button {
+    border: 1px solid rgb(160, 160, 158);
+    background: #2b3332;
+    color: rgb(160, 160, 158);
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 25px;
+    width: 80%;
+    box-shadow: 10px 10px 12.5px 0px rgb(9, 9, 9);
+}
+
+.offer-container button:hover {
+    background: rgb(160, 160, 158);
+    color: #2b3332;
+}
+
+@media (min-width: 768px) {
+    /*nav-section*/
+    .menu-toggle {
+        display: none;
+    }
+    .site-nav {
+        height: auto;
+        position: relative;
+        background: transparent;
+        float: right;
+        clip-path: initial;
+    }
+    .site-nav li {
+        display: inline-block;
+        border: none;
+    }
+    .site-nav a {
+        padding: 0;
+        margin-left: 3em;
+    }
+    .site-nav a:hover,
+    .site-nav a:focus {
+        background: transparent;
+    }
+    .site-nav--icon {
+        display: none;
+    }
+    .home-container {
+        max-width: 97.8%;
+        height: 500px;
+        margin-top: 0;
+        font-size: 1.2rem;
+        padding: 20px;
+        text-align: center;
+        line-height: 15px;
+        background-image: url('../img/wall.jpeg');
+        background-repeat: no-repeat;
+    }
+    .home-container .leading {
+        font-size: 3.5rem;
+        line-height: 15px;
+        margin-top: 170px;
+    }
+    .home-container .realEstate {
+        font-size: 3rem;
+        font-weight: bold;
+        line-height: 15px;
+    }
+    .offer-container {
+        background: #2b3332;
+        padding: 20px;
+        border-top: 2px solid rgb(230, 230, 191);
+        text-align: center;
+        color: #EBEBD3;
+        line-height: 30px;
+        height: auto;
+    }
+    .offer-container .row .col-md-6 {
+        width: 50%;
+        border: 2px solid rgb(160, 160, 158);
+        box-shadow: 10px 10px 12.5px 0px rgb(9, 9, 9);
+        font-size: 12px;
+        border-radius: 12.5px;
+        margin-top: 25px;
+        box-sizing: border-box;
+        float: left;
+        display: inline-block;
+        background: #2b3332;
+    }
+    .offer-container.row .col-md-6:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@media (min-width: 992px) {
     /*nav-section*/
     .menu-toggle {
         display: none;
@@ -191,7 +332,6 @@ header::after {
         line-height: 15px;
         background-image: url('../img/wall.jpeg');
         background-repeat: no-repeat;
-        border-bottom: 2px groove #2b3332;
     }
     .home-container .leading {
         font-size: 3.5rem;
@@ -202,5 +342,31 @@ header::after {
         font-size: 3rem;
         font-weight: bold;
         line-height: 15px;
+    }
+    .offer-container {
+        background: #2b3332;
+        padding: 20px;
+        border-top: 2px solid rgb(230, 230, 191);
+        text-align: center;
+        color: #EBEBD3;
+        line-height: 30px;
+        height: auto;
+    }
+    .offer-container .row .col-3 {
+        width: 25%;
+        border: 2px solid rgb(160, 160, 158);
+        box-shadow: 10px 10px 12.5px 0px rgb(9, 9, 9);
+        font-size: 12px;
+        border-radius: 12.5px;
+        margin-top: 25px;
+        box-sizing: border-box;
+        float: left;
+        display: inline-block;
+        background: #2b3332;
+    }
+    .offer-container.row .col-md-6:after {
+        content: "";
+        display: table;
+        clear: both;
     }
 }
