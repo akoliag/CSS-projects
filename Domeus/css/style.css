@@ -275,6 +275,8 @@ header::after {
         color: #EBEBD3;
         line-height: 30px;
         height: auto;
+        overflow: auto;
+        column-gap: 1.5rem;
     }
     .offer-container .row .col-md-6 {
         width: 50%;
@@ -287,6 +289,12 @@ header::after {
         float: left;
         display: inline-block;
         background: #2b3332;
+    }
+    .col-md-6:hover {
+        transform: scale(1.05);
+    }
+    .col-md-6 .card-header:hover {
+        background-color: rgb(208, 208, 187);
     }
     .offer-container.row .col-md-6:after {
         content: "";
@@ -351,6 +359,13 @@ header::after {
         color: #EBEBD3;
         line-height: 30px;
         height: auto;
+        overflow: auto;
+    }
+    .col-3:hover {
+        transform: scale(1.05);
+    }
+    .col-3 .card-header:hover {
+        background-color: rgb(208, 208, 187);
     }
     .offer-container .row .col-3 {
         width: 25%;
