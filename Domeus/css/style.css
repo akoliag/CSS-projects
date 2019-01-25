@@ -258,6 +258,11 @@ header::after {
   box-sizing: border-box;
   }
 
+  .slide-container .row .content:hover {
+      color: #cab226 ;
+      background: rgba(0, 0, 0, 0.7);
+  }
+
 .slide-container .row .col-sm-12  img {
   height: 100%;
   width: 100%;
@@ -316,6 +321,17 @@ header::after {
         font-weight: bold;
         line-height: 15px;
     }
+
+    .offer-container .row .col-md-6:hover {
+       transform: scale(1.05);
+   }
+
+
+   .offer-container.row .col-md-6:after {
+       content: "";
+       display: table;
+       clear: both;
+   }
     .offer-container {
         background: #4D6062;
         padding: 20px;
@@ -345,6 +361,7 @@ header::after {
         display: table;
         clear: both;
     }
+
 
     .slide-container .row .col-md-6  {
       width: 50%;
