@@ -193,3 +193,11 @@ h1 {
 	    -ms-transform: rotate(20deg);
 	    transform: rotate(20deg);
 }
+
+.lower_body:hover .right_leg {
+		-webkit-transform: rotate(-20deg);
+	    -moz-transform: rotate(-20deg);
+	    -o-transform: rotate(-20deg);
+	    -ms-transform: rotate(-20deg);
+	    transform: rotate(-20deg);
+}
