@@ -19,11 +19,8 @@ h1 {
 	 background-color: #5f93e8;
 }
 
-.learning {
+.tounge {
 	background-color: red;
-}
-
-.learning {
 	width: 35px;
 	height: 35px;
 	margin: 0;
@@ -162,4 +159,37 @@ h1 {
 	position: relative;
 	top: 100px;
 	left: 120px;
+}
+
+.head:hover .left_eye {
+	background-color: #5f93e8;
+	border: 1px solid white;
+	border-radius: 20px 20px 0 0;
+}
+
+.head:hover .tounge {
+	display: block;
+}
+
+.upper_body:hover .left_arm {
+		-webkit-transform: rotate(30deg);
+	    -moz-transform: rotate(30deg);
+	    -o-transform: rotate(30deg);
+	    -ms-transform: rotate(30deg);
+	    transform: rotate(30deg);
+}
+.upper_body:hover .right_arm {
+		-webkit-transform: rotate(-30deg);
+	    -moz-transform: rotate(-30deg);
+	    -o-transform: rotate(-30deg);
+	    -ms-transform: rotate(-30deg);
+	    transform: rotate(-30deg);
+}
+
+.lower_body:hover .left_leg {
+		-webkit-transform: rotate(20deg);
+	    -moz-transform: rotate(20deg);
+	    -o-transform: rotate(20deg);
+	    -ms-transform: rotate(20deg);
+	    transform: rotate(20deg);
 }
