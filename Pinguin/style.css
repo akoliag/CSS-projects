@@ -79,7 +79,7 @@ body {
   top: 35%;
   left: 55%;
   width: 6%;
-  height: 6%;
+  height: 7%;
   border-radius: 50%;
   background-color: black;
   z-index: 3;
@@ -88,11 +88,89 @@ body {
 
 .left-eye {
   top: 35%;
-  left: 37%;
+  left: 38%;
   width: 6%;
-  height: 6%;
+  height: 7%;
   border-radius: 50%;
   background-color: black;
   z-index: 3;
   position: absolute;
+}
+
+.sparkle {
+    top: 25%;
+    left: 15%;
+    background: white;
+    width: 35%;
+    height: 35%;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.blush-right {
+   top: 43%;
+   left: 32%;
+   background: pink;
+   width: 7%;
+   height: 5%;
+   border-radius: 50%;
+   z-index: 4;
+   position: absolute;
+}
+
+ .blush-left {
+    top: 43%;
+    left: 61%;
+    background: pink;
+    width: 7%;
+    height: 5%;
+    border-radius: 50%;
+    z-index: 4;
+    position: absolute;
+}
+
+.beak-top {
+    top: 41%;
+    left: 43%;
+    background: orange;
+    width: 12%;
+    height: 6%;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 5;
+}
+
+.beak-bottom {
+    top: 45%;
+    left: 45%;
+    background: orange;
+    width: 8%;
+    height: 4%;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 5;
+}
+
+.right-hand {
+    top: 4%;
+    left: -10%;
+    background: gray;
+    width: 30%;
+    height: 60%;
+    border-radius: 30% 30% 120% 30%;
+    transform: rotate(45deg);
+    z-index: -1;
+    position: absolute;
+}
+
+  .left-hand {
+    top: 4%;
+    left: 77%;
+    background: gray;
+    width: 30%;
+    height: 60%;
+    border-radius: 30% 30% 30% 120%;
+    transform: rotate(-45deg);
+    z-index: -1;
+    position: absolute;
 }
