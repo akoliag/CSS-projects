@@ -1,3 +1,98 @@
+html{
+  height: 100%;
+}
+
 body {
-  background-color: #255E69;
+  background-color: #437983;
+}
+
+.penguin {
+  position: relative;
+  margin: auto;
+  display: block;
+  width: 500px;
+  height: 500px;
+  margin-top: 10%;
+  border: 3px solid red;
+}
+
+.upper_body{
+  top: 0%;
+  left: 25%;
+  background-color: gray;
+  width: 50%;
+  height: 45%;
+  border-radius: 70% 70% 60% 60%;
+  margin: auto;
+}
+
+.lower_body {
+  top: 47%;
+  left: 23.5%;
+  background-color: gray;
+  width: 53%;
+  height: 45%;
+  border-radius: 70% 70% 100% 100%;
+  margin: auto;
+  position: absolute;
+  z-index: 1;
+}
+
+.belly {
+    top: 70%;
+    left: 2.5%;
+    background: white;
+    width: 95%;
+    height: 90%;
+    border-radius: 100% 100% 120% 120%;
+    margin: auto;
+}
+
+.right-cheek {
+  top: 1%;
+  left: 0%;
+  background-color: white;
+  width: 60%;
+  height: 70%;
+  border-radius: 70% 70% 60% 60%;
+  float: right;
+  margin-top: 20%;
+  margin-right: 5%;
+  position: relative;
+  z-index: 2;
+}
+
+.left-cheek {
+  top: 23%;
+  left: 0;
+  background: white;
+  width: 60%;
+  height: 70%;
+  border-radius: 70% 70% 60% 60%;
+  margin-top: 20%;
+  margin-left: 5%;
+  position: relative;
+  z-index: 2;
+}
+
+.right-eye {
+  top: 35%;
+  left: 55%;
+  width: 6%;
+  height: 6%;
+  border-radius: 50%;
+  background-color: black;
+  z-index: 3;
+  position: absolute;
+}
+
+.left-eye {
+  top: 35%;
+  left: 37%;
+  width: 6%;
+  height: 6%;
+  border-radius: 50%;
+  background-color: black;
+  z-index: 3;
+  position: absolute;
 }
