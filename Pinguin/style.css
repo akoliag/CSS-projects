@@ -13,7 +13,7 @@ body {
   width: 500px;
   height: 500px;
   margin-top: 10%;
-  border: 3px solid red;
+  border: 0.5px solid #437983;
 }
 
 .upper_body{
@@ -97,7 +97,31 @@ body {
   position: absolute;
 }
 
-.sparkle {
+.upper_body:hover .left-eye{
+  top: 35%;
+  left: 38%;
+  width: 6%;
+  height: 7%;
+  border-radius: 70% 70% 50% 50%;
+  background-color: gray;
+  z-index: 3;
+  position: absolute;
+}
+.upper_body:hover .left-sparkle {
+  display: none;
+}
+
+.left-sparkle {
+    top: 25%;
+    left: 15%;
+    background: white;
+    width: 35%;
+    height: 35%;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.right-sparkle {
     top: 25%;
     left: 15%;
     background: white;
@@ -117,6 +141,24 @@ body {
    z-index: 4;
    position: absolute;
 }
+
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+.blink {
+  animation: blinker;
+}
+
+.upper_body:hover .blink {
+  background-color: #ff3399;
+  animation: blinker 2s  infinite;
+}
+
+
+
 
  .blush-left {
     top: 43%;
@@ -173,4 +215,29 @@ body {
     transform: rotate(-45deg);
     z-index: -1;
     position: absolute;
+}
+
+
+.right-feet {
+   top: 85%;
+   left: 60%;
+   background: orange;
+   width: 15%;
+   height: 30%;
+   border-radius: 50% 50% 50% 50%;
+   transform: rotate(-80deg);
+   position: absolute;
+   z-index: -1;
+}
+
+.left-feet {
+    top: 85%;
+    left: 25%;
+    background: orange;
+    width: 15%;
+    height: 30%;
+    border-radius: 50% 50% 50% 50%;
+    transform: rotate(80deg);
+    position: absolute;
+    z-index: -2222;
 }
