@@ -1,5 +1,6 @@
 body {
   margin: auto 0;
+  font-family: Arial;
 }
 .zone {
     cursor:pointer;
@@ -17,8 +18,17 @@ body {
     box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
 }
 
+.box:hover {
+    -webkit-transform: rotate(-7deg)
+}
 
 /*NAV*/
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 .main-nav {
   display: flex;
   list-style: none;
@@ -52,7 +62,11 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 50vh; /*vh = view height*/
+  height: 70vh; /*vh = view height*/
+}
+
+.cover {
+  width: 39rem;
 }
 
 /*GRID*/
@@ -71,6 +85,13 @@ a {
   padding: 100px;
   margin: 20px;
 }
+
+/*Footer*/
+
+footer {
+  text-align: center;
+}
+
 /*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
 /***********************************************************************
  *  Green Background
