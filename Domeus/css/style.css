@@ -226,6 +226,7 @@ header::after {
 .offer-container button:hover {
     background: rgb(2, 132, 240);
     color: #2b3332;
+    border: 1px dotted #2b3332;
 }
 
 
@@ -241,7 +242,7 @@ header::after {
   text-align: center;
   padding: 20px;
   background-color: #131F27;
-  color: #EBEBD3;
+  color: white;
 }
 
 .slide-container .row {
@@ -268,8 +269,8 @@ header::after {
   box-sizing: border-box;
   }
 
-  .slide-container .row .content:hover {
-      color: #cab226 ;
+  .slide-container .col-3:hover .content{
+      color: rgb(2, 132, 240);
       background: rgba(0, 0, 0, 0.7);
   }
 
@@ -365,7 +366,6 @@ header::after {
 
     .col-md-6 .card:hover .card-header{
         background-color: rgb(22, 132, 240);
-        border-bottom: 2px solid #2b3332;
     }
     .offer-container.row .col-md-6:after {
         content: "";
