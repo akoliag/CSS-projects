@@ -14,10 +14,10 @@ body {
 
 header {
     background: #131F27;
-    color: rgb(230, 230, 191);
-    padding: 1em 0;
+    color: rgb(22, 132, 240);
+    padding: 1.5em 0;
     position: relative;
-    border-bottom: 2px solid rgb(230, 230, 191);
+    border-bottom: 2px solid rgb(22, 132, 240);
 }
 
 header::after {
@@ -63,7 +63,7 @@ header::after {
 }
 
 .site-nav a {
-    color: #EBEBD3;
+    color: rgb(22, 132, 240);
     display: block;
     padding: 2em 4em 2em 1.5em;
     text-transform: uppercase;
@@ -73,7 +73,8 @@ header::after {
 .site-nav a:hover,
 .site-nav a:focus {
     background: rgb(12, 18, 22);
-    color: #cab226;
+    color: #0284F0;
+    border-bottom: 1px solid rgb(22, 132, 240);
 }
 
 .site-nav--icon {
@@ -98,7 +99,7 @@ header::after {
 .hamburger::after {
     content: '';
     display: block;
-    background: #EBEBD3;
+    background: rgb(22, 132, 240);
     height: 3px;
     width: 1.75em;
     border-radius: 3px;
@@ -158,9 +159,9 @@ header::after {
 .offer-container {
     background: #131F27;
     padding: 20px;
-    border-top: 2px solid rgb(230, 230, 191);
+    border-top: 2px solid rgb(22, 132, 240);
     text-align: center;
-    color: #EBEBD3;
+    color: white;
     line-height: 30px;
     height: auto;
 }
@@ -173,15 +174,21 @@ header::after {
     padding: 20px;
 }
 
+.card {
+  background-color: rgb(144, 155, 162);
+}
 .offer-container .card-body {
     padding: 20px;
+    background-color: rgb(144,155,162);
+    margin: 0;
+    color: black;
 }
 
 .offer-container .row .col-sm-12 {
     border: 2px solid rgb(160, 160, 158);
     box-shadow: 10px 10px 12.5px 0px rgb(9, 9, 9);
     font-size: 12px;
-    border-radius: 12.5px;
+    /* border-radius: 12.5px; */
     margin-top: 25px;
     box-sizing: border-box;
 }
@@ -189,33 +196,35 @@ header::after {
     margin-bottom: 40px;
 }
 
+
 .offer-container .row .card-header {
     font-size: 18px;
     padding: 18px;
     margin: 0 auto;
-    background: rgb(160, 160, 158);
+    background: rgb(22, 132, 240);
     color: #2b3332;
     font-weight: bold;
-    border-top-left-radius: 12.5px;
-    border-top-right-radius: 12.5px;
-    margin-bottom: 15px;
+    /* border-top-left-radius: 12.5px;
+    border-top-right-radius: 12.5px; */
+    /* margin-bottom: 15px; */
     box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.75);
     height: 40px;
+    border-bottom: 2px  solid rgb(2, 132, 240);
 }
 
 .offer-container button {
-    border: 1px solid rgb(160, 160, 158);
-    background: #131F27;
-    color: rgb(160, 160, 158);
-    border-radius: 5px;
+    border: 1px solid rgb(2, 132, 240);
+    background: rgb(22, 132, 240);
+    color: #2b3332;
+    /* border-radius: 5px; */
     padding: 10px;
     margin-bottom: 25px;
     width: 80%;
-    box-shadow: 10px 10px 12.5px 0px rgb(9, 9, 9);
+    box-shadow: 3px 3px 5.5px 0px rgb(9, 9, 9);
 }
 
 .offer-container button:hover {
-    background: rgb(160, 160, 158);
+    background: rgb(2, 132, 240);
     color: #2b3332;
 }
 
@@ -241,6 +250,8 @@ header::after {
 	justify-content: center;
   background-color: #131F27;
 }
+
+
 
 .slide-container .row .content {
   position: relative;
@@ -334,9 +345,7 @@ header::after {
     .offer-container {
         background: #131F27;
         padding: 20px;
-        border-top: 2px solid rgb(230, 230, 191);
         text-align: center;
-        color: #EBEBD3;
         line-height: 30px;
         height: auto;
         overflow: auto;
@@ -347,7 +356,6 @@ header::after {
         border: 2px solid rgb(160, 160, 158);
         box-shadow: 10px 10px 12.5px 0px rgb(9, 9, 9);
         font-size: 12px;
-        border-radius: 12.5px;
         margin-top: 25px;
         box-sizing: border-box;
         float: left;
@@ -355,6 +363,10 @@ header::after {
         background: #131F27;
     }
 
+    .col-md-6 .card:hover .card-header{
+        background-color: rgb(22, 132, 240);
+        border-bottom: 2px solid #2b3332;
+    }
     .offer-container.row .col-md-6:after {
         content: "";
         display: table;
@@ -423,23 +435,20 @@ header::after {
     .offer-container {
         background: #131F27;
         padding: 20px;
-        border-top: 2px solid rgb(230, 230, 191);
         text-align: center;
-        color: #EBEBD3;
         line-height: 30px;
         height: auto;
         overflow: auto;
     }
 
-    .col-3 .card-header:hover {
-        background-color: rgb(208, 208, 187);
+    .col-3 .card:hover .card-header{
+        background-color: rgb(22, 132, 240);
     }
     .offer-container .row .col-3 {
         width: 25%;
         border: 2px solid rgb(160, 160, 158);
         box-shadow: 10px 10px 12.5px 0px rgb(9, 9, 9);
         font-size: 12px;
-        border-radius: 12.5px;
         margin-top: 25px;
         box-sizing: border-box;
         float: left;
