@@ -287,7 +287,8 @@ header::after {
 }
 
 .picture img {
-  height: 500px;
+  display: block;
+  height: 550px;
   width: 100%;
 }
 
@@ -297,6 +298,7 @@ header::after {
   max-width: 100%;
   border-bottom: 3px solid rgb(86, 150, 150);
 }
+
 @media (min-width: 768px) {
     /*nav-section*/
     .menu-toggle {
