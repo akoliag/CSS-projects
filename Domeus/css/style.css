@@ -223,7 +223,7 @@ header::after {
 .offer-container button:hover {
     /* background: rgb(2, 132, 240);
     color: #2b3332; */
-    border: 1.5px solid #2b3332;
+    border: 1.5px solid #00EEEE;
 }
 
 
@@ -248,8 +248,6 @@ header::after {
 	justify-content: center;
   background-color: #131F27;
 }
-
-
 
 .slide-container .row .content {
   position: relative;
@@ -279,8 +277,26 @@ header::after {
   box-sizing: border-box;
 }
 
+/*About us*/
 
+.about {
+  background-color: #131F27;
+  height: 50px;
+  max-width: 100%;
+  border-top: 3px solid rgb(86, 150, 150);
+}
 
+.picture img {
+  height: 500px;
+  width: 100%;
+}
+
+.about1 {
+  background-color: #131F27;
+  height: 50px;
+  max-width: 100%;
+  border-bottom: 3px solid rgb(86, 150, 150);
+}
 @media (min-width: 768px) {
     /*nav-section*/
     .menu-toggle {
