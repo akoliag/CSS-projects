@@ -173,13 +173,14 @@ header::after {
 }
 
 .card {
-  background-color: rgb(144, 155, 162);
+  /* background-color: rgb(144, 155, 162); */
+  /* margin: 20px; */
 }
 .offer-container .card-body {
     padding: 20px;
-    background-color: rgb(144,155,162);
+    /* background-color: rgb(144,155,162); */
     margin: 0;
-    color: black;
+    color: white;
 }
 
 .offer-container .row .col-sm-12 {
@@ -287,20 +288,20 @@ header::after {
   text-align: center;
 }
 
-.picture img {
+/* .picture img {
   width: 100%;
   height: 450px;
   position: relative;
-}
+} */
 
 .abstract {
-  position: absolute;
-  top: 45%;
-  left: 40%;
   color: white;
   /* font-weight: bold; */
   font-size: 3rem;
-  margin: 0;
+  margin-top: 100px;
+  margin-bottom: 70px;
+  padding: 20px;
+  background-color: rgb(86, 150, 150);
 }
 
 .description {
@@ -426,10 +427,11 @@ header::after {
 
     .description {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
       grid-column-gap: 20px;
     }
-  }
+  /* } */
+}
 
 
 
