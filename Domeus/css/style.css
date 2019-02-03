@@ -303,6 +303,23 @@ header::after {
   margin: 0;
 }
 
+.description {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-column-gap: 20px;
+}
+
+.box {
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.box-header {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
 
 @media (min-width: 768px) {
     /*nav-section*/
@@ -384,7 +401,7 @@ header::after {
         background: #131F27;
     }
 
-    .col-md-6 .card:hover .card-header{
+    .col-md-6 .card:hover .card-header {
         background-color: rgb(86, 150, 150);
     }
     .offer-container.row .col-md-6:after {
@@ -393,16 +410,17 @@ header::after {
         clear: both;
     }
 
-
     .slide-container .row .col-md-6  {
       width: 50%;
     }
-    .slide-container.row .col-md-6:after {
-        content: "";
-        display: table;
-        clear: both;
+
+    .description {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+      grid-column-gap: 20px;
     }
-}
+  }
+
 
 
 @media (min-width: 992px) {
@@ -480,5 +498,9 @@ header::after {
       .slide-container .row .col-3  {
         width: 33.3%;
       }
-
+      .description {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        grid-column-gap: 20px;
+      }
     }
