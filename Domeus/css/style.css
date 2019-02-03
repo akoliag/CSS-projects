@@ -313,13 +313,23 @@ header::after {
   color: white;
   text-align: center;
   margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  line-height: 30px;
 }
 
 .box-header {
   font-size: 1.5rem;
   margin-bottom: 10px;
+  color: rgb(86, 150, 150);
 }
 
+.box img {
+  margin: auto;
+  width: 100%;
+  height: 370px;
+  border: 2px solid rgb(86, 150, 150);
+}
 
 @media (min-width: 768px) {
     /*nav-section*/
