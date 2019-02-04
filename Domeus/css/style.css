@@ -427,6 +427,13 @@ header::after {
       box-sizing: border-box;
     }
 
+.footer {
+  text-align: center;
+  background: #131F27;
+  color: rgb(86, 150, 150);
+  padding: 1.5em 0;
+}
+
 @media (min-width: 768px) {
     /*nav-section*/
     .menu-toggle {
