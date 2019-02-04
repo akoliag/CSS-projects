@@ -149,7 +149,7 @@ header::after {
 .home-container .realEstate {
     font-size: 2.5rem;
     font-weight: bold;
-    line-height: 10x;
+    line-height: 10px;
 }
 
 /*offer section*/
@@ -160,16 +160,17 @@ header::after {
     border-top: 2px solid rgb(86, 150, 150);
     text-align: center;
     color: white;
-    line-height: 30px;
+    line-height: 20px;
     height: auto;
 }
 
 .offer-container h1 {
     margin-top: 50px;
     font-weight: normal;
-    font-size: 1.9rem;
+    font-size: 3rem;
     line-height: 50px;
     padding: 20px;
+    background-color: rgb(86, 150, 150);
 }
 
 .card {
@@ -224,6 +225,7 @@ header::after {
     /* background: rgb(2, 132, 240);
     color: #2b3332; */
     border: 1.5px solid #00EEEE;
+    box-sizing: border-box;
 }
 
 
@@ -280,7 +282,7 @@ header::after {
 /*About us*/
 .about-container {
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 90px;
 }
 
 .picture {
@@ -331,7 +333,28 @@ header::after {
   height: 370px;
   border: 2px solid rgb(86, 150, 150);
 }
+/*Contact us*/
 
+.contact-container {
+  background-color: rgb(86, 150, 150);
+  width: 100%;
+  height: 750px;
+}
+
+.contact-heading {
+  text-align: center;
+  color: white;
+  font-size: 3rem;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.contact-content {
+  text-align: center;
+  color: white;
+  padding: 20px;
+  margin-bottom: 40px;
+}
 @media (min-width: 768px) {
     /*nav-section*/
     .menu-toggle {
@@ -489,7 +512,6 @@ header::after {
         text-align: center;
         line-height: 30px;
         height: auto;
-        overflow: auto;
     }
 
     .col-3 .card:hover .card-header{
