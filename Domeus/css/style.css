@@ -355,6 +355,78 @@ header::after {
   padding: 20px;
   margin-bottom: 40px;
 }
+
+.name {
+  text-align: center;
+}
+
+.name input {
+  font-family: 'Quicksand', sans-serif;
+  height: 40px;
+  width: 33%;
+  font-size: 1rem;
+  padding: 10px;
+  border: 2px solid #131F27;
+}
+
+ .name input:hover {
+  border: 2px solid #00EEEE;
+}
+
+.mail {
+  text-align: center;
+}
+.mail input {
+  font-family: 'Quicksand', sans-serif;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  height: 40px;
+  width: 33%;
+  font-size: 1rem;
+  padding: 10px;
+  border: 2px solid #131F27;
+}
+
+ .mail input:hover {
+  border: 2px solid #00EEEE;
+}
+
+.area {
+  text-align: center;
+}
+.area textarea {
+  font-family: 'Quicksand', sans-serif;
+  margin-bottom: 30px;
+  height: 150px;
+  width: 33%;
+  font-size: 1rem;
+  padding: 10px;
+  border: 2px solid #131F27;
+}
+
+ .area textarea:hover {
+  border: 2px solid #00EEEE;
+}
+
+.contact-button {
+  text-align: center;
+}
+.contact-button button {
+    background: rgb(86, 150, 150);
+    color: #2b3332;
+    /* border-radius: 5px; */
+    padding: 10px;
+    margin-bottom: 25px;
+    width: 15%;
+    box-shadow: 3px 3px 5.5px 0px rgb(9, 9, 9);
+    font-size: 1rem;
+  }
+
+  .contact-button button:hover {
+      border: 1.5px solid #00EEEE;
+      box-sizing: border-box;
+    }
+
 @media (min-width: 768px) {
     /*nav-section*/
     .menu-toggle {
