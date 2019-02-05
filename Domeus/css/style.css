@@ -434,6 +434,32 @@ header::after {
   padding: 1.5em 0;
 }
 
+.span-container {
+  width: 100%;
+  text-align: center;
+  margin-left: 8%;
+}
+
+.connect {
+  color: white;
+  display: block;
+  height: auto;
+}
+
+.form {
+  width: 100%;
+  text-align: left;
+}
+
+.main {
+  font-weight: bold;
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+
+.email-us {
+  font-weight: bold;
+}
 @media (min-width: 768px) {
     /*nav-section*/
     .menu-toggle {
@@ -533,6 +559,24 @@ header::after {
       grid-column-gap: 20px;
     }
   /* } */
+  .span-container {
+    width: 20%;
+    float: left;
+    text-align: center;
+  }
+
+  .connect {
+    color: white;
+    display: block;
+  }
+
+  .form {
+    width: 80%;
+    float: left;
+    text-align: left;
+    position: absolute;
+    left: 10%;
+  }
 }
 
 
