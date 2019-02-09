@@ -341,7 +341,7 @@ header::after {
 .box img {
   margin: auto;
   width: 100%;
-  height: 370px;
+  height: 250px;
   border: 2px solid rgb(86, 150, 150);
 }
 /*Contact us*/
@@ -527,7 +527,6 @@ header::after {
        transform: scale(1.05);
    }
 
-
    .offer-container.row .col-md-6:after {
        content: "";
        display: table;
@@ -569,10 +568,32 @@ header::after {
 
     .description {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+      column-count: 2;
       grid-column-gap: 20px;
     }
-  /* } */
+
+    .box {
+      color: white;
+      text-align: center;
+      margin-top: 20px;
+      margin-left: 20px;
+      margin-right: 20px;
+      line-height: 30px;
+    }
+
+    .box-header {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      color: rgb(86, 150, 150);
+    }
+
+    .box img {
+      margin: auto;
+      width: 100%;
+      height: 250px;
+      border: 2px solid rgb(86, 150, 150);
+    }
+
   .span-container {
     width: 20%;
     float: left;
@@ -594,22 +615,22 @@ header::after {
   .contact-container {
     height: 750px;;
   }
-.name input {
+  .name input {
     width: 33.3%;
   }
 
   .mail input {
       width: 33.3%;
     }
-.contact-button button {
+  .contact-button button {
   width: 15%;
-}
-.span-container {
+  }
+  .span-container {
   margin-left: 8%;
-}
-.area textarea {
+  }
+  .area textarea {
   width: 33.3%;
-}
+  }
 }
 
 
@@ -692,5 +713,26 @@ header::after {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
         grid-column-gap: 20px;
+      }
+      .box {
+        color: white;
+        text-align: center;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        line-height: 30px;
+      }
+
+      .box-header {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        color: rgb(86, 150, 150);
+      }
+
+      .box img {
+        margin: auto;
+        width: 100%;
+        height: 370px;
+        border: 2px solid rgb(86, 150, 150);
       }
     }
