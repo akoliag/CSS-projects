@@ -8,17 +8,16 @@ body {
 }
 
 .nav-container {
-    /* width: 95%; */
+    width: 95%;
     max-width: 100%;
     margin: 0 auto;
 }
 
 header {
-    background: #008A73;
-    color: #01352C;
+    background: rgba(0, 138, 115, 0.8);
+    color: white;
     padding: 1.5em 0;
     position: relative;
-    border-bottom: 2px solid rgb(86, 150, 150);
 }
 
 header::after {
@@ -36,6 +35,8 @@ header::after {
 
 .X {
   font-size: 1.8rem;
+  font-family: 'Mr Dafoe', cursive;
+  font-style: italic;
 }
 
 .site-nav {
@@ -45,3 +46,120 @@ header::after {
     clip-path: circle(0px at top right);
     transition: clip-path ease-in-out 900ms;
 }
+
+.site-nav--open {
+    clip-path: circle(250% at top right);
+    display: block;
+}
+
+.site-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.site-nav li {
+    border-bottom: 1px solid  #699D94;
+}
+
+.site-nav li:last-child {
+    border-bottom: none;
+}
+
+.site-nav a {
+    color: white;
+    background: rgba(0, 138, 115, 0.8);
+    display: block;
+    padding: 2em 4em 2em 1.5em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+    background: #008A73;
+    color: #01352C;
+}
+
+.site-nav--icon {
+    display: inline-block;
+    font-size: 1.5em;
+    margin-right: 1em;
+    width: 1.1em;
+    text-align: right;
+    color: rgba(255, 255, 255, .4);
+}
+
+.menu-toggle {
+    padding: 1em;
+    position: absolute;
+    top: .5em;
+    right: .5em;
+    cursor: pointer;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    display: block;
+    background: white;
+    height: 3px;
+    width: 1.75em;
+    border-radius: 3px;
+    transition: all ease-in-out 500ms;
+}
+
+.hamburger::before {
+    transform: translateY(-6px);
+}
+
+.hamburger::after {
+    transform: translateY(3px);
+
+}
+
+.open .hamburger {
+    transform: rotate(45deg);
+}
+
+.open .hamburger::before {
+    opacity: 0;
+}
+
+.open .hamburger::after {
+    transform: translateY(-3px) rotate(-90deg);
+}
+
+
+
+@media (min-width: 768px) {
+    /*nav-section*/
+    header {
+        border-bottom: 2px solid #699D94;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .site-nav {
+        height: auto;
+        position: relative;
+        background: transparent;
+        float: right;
+        clip-path: initial;
+    }
+    .site-nav li {
+        display: inline-block;
+        border: none;
+    }
+    .site-nav a {
+        padding: 0;
+        margin-left: 3em;
+        background: none;
+    }
+
+    .site-nav--icon {
+        display: none;
+    }
