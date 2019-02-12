@@ -7,6 +7,14 @@ body {
   margin: 0;
 }
 
+.home-picture img {
+  width: 100%;
+  height: 435px;
+  margin: 0;
+  position: absolute;
+  background-size: cover;
+}
+
 .nav-container {
     width: 95%;
     max-width: 100%;
@@ -16,7 +24,7 @@ body {
 header {
     background: rgba(0, 138, 115, 0.8);
     color: white;
-    padding: 1.5em 0;
+    padding: 1em 0;
     position: relative;
 }
 
@@ -40,6 +48,7 @@ header::after {
 }
 
 .site-nav {
+    width: 100%;
     position: absolute;
     top: 100%;
     right: 0%;
@@ -70,14 +79,14 @@ header::after {
     color: white;
     background: rgba(0, 138, 115, 0.8);
     display: block;
-    padding: 2em 4em 2em 1.5em;
+    padding: 2em 2em 2em 1.5em;
     text-transform: uppercase;
     text-decoration: none;
 }
 
 .site-nav a:hover,
 .site-nav a:focus {
-    background: #008A73;
+    /* background: #008A73; */
     color: #01352C;
 }
 
@@ -135,6 +144,14 @@ header::after {
 
 @media (min-width: 768px) {
     /*nav-section*/
+    .home-picture img {
+      width: 100%;
+      height: 650px;
+      margin: 0;
+      position: absolute;
+      background-size: cover;
+    }
+
     header {
         border-bottom: 2px solid #699D94;
     }
@@ -144,12 +161,14 @@ header::after {
     }
 
     .site-nav {
+        width: auto;
         height: auto;
         position: relative;
         background: transparent;
         float: right;
         clip-path: initial;
     }
+
     .site-nav li {
         display: inline-block;
         border: none;
@@ -170,3 +189,14 @@ header::after {
     .site-nav--icon {
         display: none;
     }
+}
+
+@media (min-width: 992px) {
+    .home-picture img {
+      width: 100%;
+      height: 950px;
+      margin: 0;
+      position: absolute;
+      background-size: cover;
+    }
+  }
