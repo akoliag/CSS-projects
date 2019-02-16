@@ -33,7 +33,7 @@ body {
 }
 
 header {
-    background: rgba(0, 138, 115, 0.8);
+    background: rgba(0, 53, 44, 0.8);
     color: white;
     padding: 1em 0;
     position: relative;
@@ -88,7 +88,7 @@ header::after {
 
 .site-nav a {
     color: white;
-    background: rgba(0, 138, 115, 0.8);
+    background: rgba(0, 53, 44, 0.8);
     display: block;
     padding: 2em 2em 2em 1.5em;
     text-transform: uppercase;
@@ -98,7 +98,7 @@ header::after {
 .site-nav a:hover,
 .site-nav a:focus {
     /* background: #008A73; */
-    color: #01352C;
+    color: #00A085;
 }
 
 .site-nav--icon {
@@ -157,7 +157,7 @@ header::after {
 
     /*nav-section*/
     header {
-        background: rgba(0, 138, 115, 0.7);
+        background: rgba(0, 53, 44, 0.7);;
         color: white;
         padding: 0.5em 0;
         position: fixed;
@@ -216,7 +216,7 @@ header::after {
     .site-nav a:hover,
     .site-nav a:focus {
         background: none;
-        color: #01352C;
+        color: #00A085;
     }
 
     .site-nav--icon {
