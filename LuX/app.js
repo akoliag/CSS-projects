@@ -25,5 +25,5 @@ function slideshow() {
   slideIndex++;
   if (slideIndex > x.length) {slideIndex = 1}
   x[slideIndex-1].style.display = "block";
-  setTimeout(slideshow, 4000);
+  setTimeout(slideshow, 8000);
 }
