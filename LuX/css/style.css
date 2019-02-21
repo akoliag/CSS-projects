@@ -14,6 +14,18 @@ body {
   background-size: cover;
 }
 
+@keyframes homePicture {
+    45% { opacity: 0.9;
+    animation-timing-function: ease-in; }
+    100% { opacity: 1;
+         animation-timing-function: ease-out; }
+}
+
+.home-picture {
+  animation: homePicture 10s infinite;
+}
+
+
 .home-photo-text {
   position: absolute;
   right: 20px;
@@ -26,7 +38,19 @@ body {
   z-index: 2;
 }
 
+.display-left {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%,-50%);
 }
+
+.display-right {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(0%,-50%);
+  }
 .nav-container {
   width: 95%;
   max-width: 100%;
@@ -35,7 +59,7 @@ body {
 header {
   background: rgba(0, 53, 44, 0.8);
   color: white;
-  padding: 0.8em 0;
+  padding: 0.4em 0;
   position: relative;
 }
 header::after {
@@ -135,7 +159,7 @@ header::after {
   header {
     background: rgba(0, 53, 44, 0.7);
     color: white;
-    padding: 0.6em 0;
+    padding:  0;
     position: fixed;
     top: 0;
     width: 100%;
@@ -217,7 +241,7 @@ header::after {
     color: white;
     font-style: italic;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.7rem;
     z-index: 2;
   }
 }
