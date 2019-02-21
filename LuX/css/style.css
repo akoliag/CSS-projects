@@ -40,16 +40,34 @@ body {
 
 .display-left {
     position: absolute;
+    background: rgba(0, 53, 44, 0.8);
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    padding: 15px;
     top: 50%;
     left: 0%;
     transform: translate(0%,-50%);
 }
 
+.display-left:hover {
+    color: #00A085;
+}
+
 .display-right {
     position: absolute;
+    background: rgba(0, 53, 44, 0.8);
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    padding: 15px;
     top: 50%;
     right: 0%;
     transform: translate(0%,-50%);
+  }
+
+  .display-right:hover {
+      color: #00A085;
   }
 .nav-container {
   width: 95%;
