@@ -11,22 +11,13 @@ $(function() {
       scrollTop: $($.attr(this, 'href')).offset().top
     }, 600);
   });
-});
 
-// let slideIndex = 0;
-// slideshow();
-//
-// function slideshow() {
-//   let i;
-//   const x = document.getElementsByClassName("mySlides");
-//   for (i = 0; i < x.length; i++) {
-//     x[i].style.display = "none";
-//   }
-//   slideIndex++;
-//   if (slideIndex > x.length) {slideIndex = 1}
-//   x[slideIndex-1].style.display = "block";
-//   setTimeout(slideshow, 10000);
-// }
+  $('.home-photo-text').each(function(){
+    $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
+  });
+
+
+});
 
 var slideIndex = 1;
 showDivs(slideIndex);
