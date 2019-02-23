@@ -84,8 +84,7 @@ body {
   }
 }
 
-
- .display-left {
+.display-left {
   position: absolute;
   background: rgba(0, 53, 44, 0.8);
   border: none;
@@ -240,7 +239,9 @@ header::after {
   transform: translateY(-3px) rotate(-90deg);
 }
 
+
 /* Offer section */
+
 .asia {
   /* background: rgba(0, 53, 44, 0.7);
   margin: 0; */
@@ -249,9 +250,14 @@ header::after {
 .asia-heading {
   color: #00A085;
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 2rem;
   padding: 20px;
-  text-align: left;
+  text-align: center;
+  font-weight: bold;
+}
+
+.biggerLetter {
+  font-size: 2.3rem;
 }
 
 .asia-subheading {
@@ -268,7 +274,7 @@ header::after {
   text-align: center;
   font-size: 14px;
   line-height: 23px;
-  margin-bottom: 5px;
+  margin: 5px;
 }
 
 .asia-subtext {
@@ -276,17 +282,25 @@ header::after {
   text-align: right;
   padding: 2px;
   font-size: 0.8rem;
-  margin-right: 5px;
+  position: relative;
+  right: 20%;
   margin-bottom: 10px;
 }
 
 .asia-subtext:hover {
   color: rgba(0, 53, 44);
 }
-.asia-photos img {
+
+.asia-photo1 img {
   width: 100%;
-  height: 250px;
+  height: auto;
 }
+
+.asia-photo2 img {
+  width: 100%;
+  height: auto;
+}
+
 @media (min-width: 800px) {
   /*nav-section*/
   header {
@@ -310,7 +324,7 @@ header::after {
   .home-photo-text {
     /* position: absolute; */
     right: 100px;
-    bottom: 15px;
+    bottom: -70px;
     padding: 0px;
     color: white;
     font-style: italic;
@@ -376,10 +390,47 @@ header::after {
   .site-nav--icon {
     display: none;
   }
+  /* Offer section */
+  .asia {
+    position: relative;
+    left: 5%;
+    width: 60%;
+  }
+  .asia-heading {
+    color: #00A085;
+    text-transform: uppercase;
+    font-size: 3rem;
+    padding: 15px;
+    font-weight: bold;
+  }
+  .biggerLetter {
+    font-size: 3.3rem;
+  }
+  .asia-subheading {
+    color: #00A085;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  .asia-subtext {
+    font-size: 1rem;
+  }
+  .asia-photo1 img {
+    width: 100%;
+    height: 400px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .asia-photo2 img {
+    position: absolute;
+    width: 250px;
+    top: 80%;
+    left: 75%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
 }
 
 @media (min-width: 1360px) {
-
   .home-picture img {
     width: 100%;
     height: 650px;
