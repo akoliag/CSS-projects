@@ -323,9 +323,10 @@ header::after {
   }
   .home-photo-text {
     /* position: absolute; */
+    text-transform: uppercase;
+    padding: 10px;
     right: 100px;
     bottom: -70px;
-    padding: 0px;
     color: white;
     font-style: italic;
     font-size: 1.5rem;
@@ -449,6 +450,16 @@ header::after {
     font-size: 1.7rem;
     z-index: 2;
   }
+  /* Offer section */
+
+  .asia-photo1 img {
+    height: 500px;
+  }
+  .asia-photo2 img {
+    width: 300px;
+    top: 80%;
+    left: 90%;
+  }
 }
 
 @media (min-width: 1600px) {
@@ -458,5 +469,13 @@ header::after {
     margin: 0;
     position: relative;
     background-size: cover;
+  }
+  .asia-photo1 img {
+    height: 600px;
+  }
+  .asia-photo2 img {
+    width: 450px;
+    top: 80%;
+    left: 85%;
   }
 }
