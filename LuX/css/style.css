@@ -51,18 +51,6 @@ body {
   animation-fill-mode: both;
 }
 
-/* @-webkit-keyframes slideInLeft {
-  0% {
-    -webkit-transform: translateX(-100%);
-    transform: translateX(-100%);
-    visibility: visible;
-  }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-} */
-
 @keyframes slideInLeft {
   0% {
     -webkit-transform: translateX(-100%);
@@ -75,7 +63,29 @@ body {
   }
 }
 
-.display-left {
+.slideInDown {
+  -webkit-animation-name: slideInDown;
+  animation-name: slideInDown;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@keyframes slideInDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+
+ .display-left {
   position: absolute;
   background: rgba(0, 53, 44, 0.8);
   border: none;
