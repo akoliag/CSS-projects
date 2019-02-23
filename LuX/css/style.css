@@ -6,6 +6,7 @@ body {
   margin: 0;
 }
 
+
 .home-picture img {
   width: 100%;
   height: 435px;
@@ -235,6 +236,9 @@ header::after {
 .open .hamburger::after {
   transform: translateY(-3px) rotate(-90deg);
 }
+
+/* Offer section */
+
 
 @media (min-width: 800px) {
   /*nav-section*/
