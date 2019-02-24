@@ -34,7 +34,7 @@ body {
   position: absolute;
   text-transform: uppercase;
   right: 20px;
-  bottom: 110px;
+  bottom: 250px;
   padding: 10px;
   color: white;
   /* text-shadow: -1.5px 0 #0F2320, 0 1.5px #0F2320, 1.5px 0 #0F2320, 0 -1.5px #0F2320;
@@ -294,6 +294,11 @@ header::after {
   height: auto;
 }
 
+.asia-photo2 img {
+  width: 100%;
+  height: auto;
+}
+
 .south-america-photo1 img {
   width: 100%;
   height: auto;
@@ -307,10 +312,10 @@ header::after {
   width: 100%;
   height: auto;
 }
-.asia-photo2 img {
-  width: 100%;
-  height: auto;
-}
+
+
+
+
 @media (min-width: 800px) {
   /*nav-section*/
   header {
@@ -337,10 +342,10 @@ header::after {
     text-transform: uppercase;
     padding: 10px;
     right: 100px;
-    bottom: -70px;
+    bottom: 50px;
     color: white;
     font-style: italic;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     z-index: 2;
   }
   .display-left {
@@ -403,7 +408,7 @@ header::after {
     display: none;
   }
   /* Offer section */
-  .destination {
+  .asia {
     position: relative;
     left: 5%;
     width: 60%;
@@ -425,7 +430,7 @@ header::after {
     padding: 10px;
     margin-bottom: 10px;
   }
-  .destinations-subtext {
+  .destination-subtext {
     font-size: 1rem;
   }
   .asia-photo1 img {
@@ -439,6 +444,25 @@ header::after {
     top: 80%;
     left: 75%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+.south-america {
+    margin-top: 70px;
+    position: relative;
+    left: 35%;
+    width: 60%;
+  }
+  .south-america-photo1 img {
+    width: 100%;
+    height: auto;
+  }
+  .south-america-photo2 img {
+    width: 100%;
+    height: auto;
+  }
+  .south-america-photo3 img {
+    width: 100%;
+    height: auto;
   }
 }
 
