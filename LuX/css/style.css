@@ -12,6 +12,7 @@ body {
   margin: 0;
   position: relative;
   background-size: cover;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 }
 
 @keyframes homePicture {
@@ -33,7 +34,7 @@ body {
   position: absolute;
   text-transform: uppercase;
   right: 20px;
-  bottom: 100px;
+  bottom: 110px;
   padding: 10px;
   color: white;
   /* text-shadow: -1.5px 0 #0F2320, 0 1.5px #0F2320, 1.5px 0 #0F2320, 0 -1.5px #0F2320;
@@ -242,12 +243,8 @@ header::after {
 
 /* Offer section */
 
-.asia {
-  /* background: rgba(0, 53, 44, 0.7);
-  margin: 0; */
-}
 
-.asia-heading {
+.destination-heading {
   color: #00A085;
   text-transform: uppercase;
   font-size: 2rem;
@@ -260,7 +257,7 @@ header::after {
   font-size: 2.3rem;
 }
 
-.asia-subheading {
+.destination-subheading {
   color: #00A085;
   text-transform: uppercase;
   font-size: 1.1rem;
@@ -269,7 +266,7 @@ header::after {
   margin-bottom: 10px;
 }
 
-.asia-text {
+.destination-text {
   color: black;
   text-align: center;
   font-size: 14px;
@@ -277,7 +274,7 @@ header::after {
   margin: 5px;
 }
 
-.asia-subtext {
+.destination-subtext {
   color: #00A085;
   text-align: right;
   padding: 2px;
@@ -287,8 +284,9 @@ header::after {
   margin-bottom: 10px;
 }
 
-.asia-subtext:hover {
-  color: rgba(0, 53, 44);
+.destination-subtext:hover {
+  /* color: rgba(0, 53, 44); */
+  font-weight: bold;
 }
 
 .asia-photo1 img {
@@ -296,11 +294,23 @@ header::after {
   height: auto;
 }
 
-.asia-photo2 img {
+.south-america-photo1 img {
   width: 100%;
   height: auto;
 }
 
+.south-america-photo2 img {
+  width: 100%;
+  height: auto;
+}
+.south-america-photo3 img {
+  width: 100%;
+  height: auto;
+}
+.asia-photo2 img {
+  width: 100%;
+  height: auto;
+}
 @media (min-width: 800px) {
   /*nav-section*/
   header {
@@ -318,6 +328,7 @@ header::after {
     width: 100%;
     height: 650px;
     margin: 0;
+    margin-bottom: 50px;
     position: relative;
     background-size: cover;
   }
@@ -392,12 +403,12 @@ header::after {
     display: none;
   }
   /* Offer section */
-  .asia {
+  .destination {
     position: relative;
     left: 5%;
     width: 60%;
   }
-  .asia-heading {
+  .destination-heading {
     color: #00A085;
     text-transform: uppercase;
     font-size: 3rem;
@@ -407,14 +418,14 @@ header::after {
   .biggerLetter {
     font-size: 3.3rem;
   }
-  .asia-subheading {
+  .destination-subheading {
     color: #00A085;
     text-transform: uppercase;
     font-size: 1.5rem;
     padding: 10px;
     margin-bottom: 10px;
   }
-  .asia-subtext {
+  .destinations-subtext {
     font-size: 1rem;
   }
   .asia-photo1 img {
@@ -465,11 +476,25 @@ header::after {
 @media (min-width: 1600px) {
   .home-picture img {
     width: 100%;
-    height: 950px;
+    height: 850px;
     margin: 0;
+    margin-bottom: 60px;
     position: relative;
     background-size: cover;
   }
+
+  .home-photo-text {
+    /* position: absolute; */
+    right: 100px;
+    bottom: 90px;
+    padding: 5px;
+    color: white;
+    /* font-style: italic;
+    font-weight: bold; */
+    font-size: 1.7rem;
+    z-index: 2;
+  }
+
   .asia-photo1 img {
     height: 600px;
   }
