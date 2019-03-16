@@ -12,5 +12,14 @@
             rgba($color-primary-dark, 0.8)),
         url(../img/nat-4.jpg);
         background-size: cover;
-    
+        margin-top: -12rem; //lifts the section up so that there is no white space between grey and green backgrounds
+
+        //how to skew an entire section:
+        transform: skewY(-7deg);
+
+        //how to skew already skewed section elements so that they are in the horizontal position agian:
+        //(direct child all elements):
+        & > * {
+            transform: skewY(7deg);
+        }
     }
