@@ -1,0 +1,20 @@
+.card {
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+
+
+    &__side {
+        background-color: green;
+        height: 50rem;
+        transition: all .8s;
+        color: yellow;
+    }
+    
+
+    &:hover &__side {
+        transform: rotateY(180deg);
+
+    }
+}
+
+//perspective needs to be set on the parent element to work
