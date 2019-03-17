@@ -217,14 +217,29 @@ body {
 
 .card {
   perspective: 150rem;
-  -moz-perspective: 150rem; }
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 50rem; }
   .card__side {
     background-color: green;
     height: 50rem;
     transition: all .8s;
-    color: yellow; }
-  .card:hover .card__side {
-    transform: rotateY(180deg); }
+    color: yellow;
+    font-size: 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden; }
+    .card__side--front {
+      background-color: blue; }
+    .card__side--back {
+      background-color: orange;
+      transform: rotateY(180deg); }
+  .card:hover .card__side--front {
+    transform: rotateY(-180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0deg); }
 
 .header {
   height: 95vh;

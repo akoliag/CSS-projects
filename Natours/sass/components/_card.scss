@@ -1,6 +1,9 @@
 .card {
     perspective: 150rem;
     -moz-perspective: 150rem;
+    position: relative;
+    height: 50rem;
+    //need to add height to parent element as well as position absolute make child height collapse and the effect is gone
 
 
     &__side {
@@ -8,13 +11,33 @@
         height: 50rem;
         transition: all .8s;
         color: yellow;
+        font-size: 2rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        backface-visibility: hidden; //hides the back part of the element
+
+        &--front {
+            background-color: blue;
+        }
+
+        &--back {
+            background-color: orange;
+            transform: rotateY(180deg);
+        }
     }
     
 
-    &:hover &__side {
-        transform: rotateY(180deg);
+    &:hover &__side--front {
+        transform: rotateY(-180deg);
+
+    }
+
+    &:hover &__side--back {
+        transform: rotateY(0deg);
 
     }
 }
 
-//perspective needs to be set on the parent element to work
+//perspective needs to be set on the parent element to work and it must have a very high value e.g. 150rem to have the whole effect work properly
