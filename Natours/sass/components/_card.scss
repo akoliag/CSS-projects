@@ -7,9 +7,8 @@
 
 
     &__side {
-        background-color: green;
         height: 50rem;
-        transition: all .8s;
+        transition: all .8s ease;
         color: yellow;
         font-size: 2rem;
         position: absolute;
@@ -17,13 +16,14 @@
         left: 0;
         width: 100%;
         backface-visibility: hidden; //hides the back part of the element
+        border-radius: 3px;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
 
         &--front {
-            background-color: blue;
+            background-color: $color-white;
         }
 
         &--back {
-            background-color: orange;
             transform: rotateY(180deg);
         }
     }
@@ -37,6 +37,17 @@
     &:hover &__side--back {
         transform: rotateY(0deg);
 
+        &-1 {
+            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+        }
+
+        &-2 {
+            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+        }
+
+        &-3 {
+            background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
+        }
     }
 }
 
