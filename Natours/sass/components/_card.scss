@@ -1,4 +1,6 @@
 .card {
+
+    //FUNCTIONALITY
     perspective: 150rem;
     -moz-perspective: 150rem;
     position: relative;
@@ -8,8 +10,7 @@
 
     &__side {
         height: 50rem;
-        transition: all .8s ease;
-        color: yellow;
+        transition: all .9s ease;
         font-size: 2rem;
         position: absolute;
         top: 0;
@@ -17,6 +18,7 @@
         width: 100%;
         backface-visibility: hidden; //hides the back part of the element
         border-radius: 3px;
+        overflow: hidden; //the child element will not overflow the parent element now
         box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
 
         &--front {
@@ -48,6 +50,42 @@
         &-3 {
             background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
         }
+    }
+
+    //FRONT SIDE STYLING
+
+    &__picture {
+        background-size: cover;
+        height: 23rem;
+        background-blend-mode: screen; //blends the color and the picture together
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        
+        
+
+        &--1 {
+            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(../img/nat-5.jpg);
+            //the above blends the color and the picture together to have the background-blend-mode effect
+        }
+
+        &--2 {
+            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), url(../img/nat-6.jpg);
+        }
+
+        &--3 {
+            background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), url(../img/nat-7.jpg);
+        }
+    }
+
+    &__heading {
+        font-size: 2.8rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: $color-white;
+        position: absolute;
+        top: 12rem;
+        right: 2rem;
+        text-align: right;
     }
 }
 
