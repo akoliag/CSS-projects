@@ -81,12 +81,59 @@
         font-size: 2.8rem;
         font-weight: 300;
         text-transform: uppercase;
+        text-align: right;
         color: $color-white;
         position: absolute;
         top: 12rem;
         right: 2rem;
-        text-align: right;
+        width: 75%;
+
     }
+
+    &__heading-span {
+        padding: 1rem 1.5rem;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+
+        &--1 {
+            background-image: linear-gradient(to right bottom, 
+            rgba($color-secondary-light, .85), 
+            rgba($color-secondary-dark, .85));
+        }
+
+        &--2 {
+            background-image: linear-gradient(to right bottom, 
+            rgba($color-primary-light, .85), 
+            rgba($color-primary-dark, .85));
+        }
+
+        &--3 {
+            background-image: linear-gradient(to right bottom, 
+            rgba($color-tertiary-light, .85), 
+            rgba($color-tertiary-dark, .85));
+        }
+    }
+
+    &__details {
+        padding: 3rem;
+
+        ul {
+            list-style: none;
+            width: 80%;
+            margin: 0 auto;
+
+            li {
+                text-align: center;
+                font-size: 1.5rem;
+                padding: 1rem;
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid $color-grey-light-2;
+                }
+            }
+        }
+    }
+
 }
 
 //perspective needs to be set on the parent element to work and it must have a very high value e.g. 150rem to have the whole effect work properly
