@@ -1,0 +1,28 @@
+.story {
+    width: 75%;
+    margin: 0 auto;
+    box-shadow: 0 3rem 6rem rgba($color-black, .1);
+    background-color: $color-white;
+    border-radius: 3px;
+    padding: 6rem;
+    font-size: $default-font-size;
+    padding-left: 9rem;
+    transform: skewX(-12deg); //cannot have to transform properties on one element as the second one will not work
+
+
+    &__shape {
+        width: 15rem;
+        height: 15rem;
+        float: left;
+        -webkit-shape-outside: circle(50% at 50% 50%);
+        shape-outside: circle(50% at 50% 50%); //to make it work the element needs to be floated and have width and height defined.
+        -webkit-clip-path: circle(50% at 50% 50%); 
+        clip-path: circle(50% at 50% 50%); //to have a circle shape
+        transform: translateX(-3rem) skewX(12deg);
+    }
+
+    &__img {
+        height: 100%;
+        transform: skewX(12deg);
+    }
+}
